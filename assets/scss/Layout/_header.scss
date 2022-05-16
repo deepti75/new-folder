@@ -10,10 +10,10 @@
 
 .logoBox{
     position: absolute;
-    top: 40px;
-    left: 40px;
+    top: 4rem;
+    left: 4rem;
     .logo{
-        height:35px;
+        height:3.5rem;
     }
 }
 .header-text-box{
@@ -26,12 +26,13 @@
 .heading-primary{
     color:$color-white;
     text-transform: uppercase;
-    margin-bottom: 60px;
+    margin-bottom: 6rem;
     &-main{
         display: block;
-        font-size: 60px;
+        font-size: 6rem;
         font-weight: 400;
-        letter-spacing: 30px;
+        letter-spacing: 3rem;
+        margin-bottom: 3rem;
         // animation-name: moveInLeft;
         // animation-duration: 3s;
         // animation-timing-function: ease-in-out;
@@ -41,9 +42,9 @@
     }
     &-sub{
         display: block;
-        font-size: 20px;
+        font-size: 2rem;
         font-weight: 400;
-        letter-spacing: 15px;
+        letter-spacing: 1.7rem;
         animation: moveInRight 1s ease-in-out forwards;
     }
 }
