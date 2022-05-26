@@ -1,6 +1,7 @@
 .btn{
     &:link,
-    &:visited{
+    &:visited,
+    & {
      padding: 1.5rem 4rem;
      text-decoration: none;
      display: inline-block;
@@ -15,7 +16,17 @@
      &-white{
          background-color: $color-white;
          color: $color-grey-dark;
+         &::before{
+            background-color:$color-white;
+         }
      }
+     &-green{
+        background-color: $color-primary;
+        color: $color-white;
+        &::before{
+            background-color:$color-primary;
+        }
+    }
      &:hover{
          transform: translateY(-.3rem);
          box-shadow: 0 .1rem .2rem rgba($color-dark,.2);
@@ -38,14 +49,35 @@
          top : 0;
          border-radius: 10rem;
          position: absolute;
-         background-color:$color-white;
+       
          z-index: -1;
          transition: all .4s ease-in-out;
      }
     
  } 
 
-
+ .btn-text{
+     &:link,
+     &:visited{
+         font-size: 1.6rem;
+        color: $color-primary;
+        display: inline-block;
+        text-decoration: none;
+        border-bottom: .1rem solid $color-primary;
+        padding: .3rem;
+        transition: all .2s ease-in-out;
+     }
+     &:hover,&:focus{
+        color: $color-white;
+        background-color: $color-primary;
+        box-shadow: 0 1rem 2rem rgba($color-dark, .15);
+        transform: translateY(-2px);
+     }
+     &:active{
+        box-shadow: 0 .5rem 1rem rgba($color-dark, .15);
+        transform: translateY(0);
+     }
+ }
 
 
 
